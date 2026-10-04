@@ -7,6 +7,14 @@ component that ships inside the ESP32 Arduino core — not PubSubClient or
 message and a Last Will and Testament (LWT) on connect, and repeatedly
 publishes an acknowledgement message from the main loop.
 
+[![CI](https://github.com/awijesundara/MQTT_SSL_for_ESP32/actions/workflows/ci.yml/badge.svg)](https://github.com/awijesundara/MQTT_SSL_for_ESP32/actions/workflows/ci.yml)
+[![Last commit](https://img.shields.io/github/last-commit/awijesundara/MQTT_SSL_for_ESP32/master)](https://github.com/awijesundara/MQTT_SSL_for_ESP32/commits/master)
+[![Top language](https://img.shields.io/github/languages/top/awijesundara/MQTT_SSL_for_ESP32)](https://github.com/awijesundara/MQTT_SSL_for_ESP32)
+[![Code size](https://img.shields.io/github/languages/code-size/awijesundara/MQTT_SSL_for_ESP32)](https://github.com/awijesundara/MQTT_SSL_for_ESP32)
+[![ESP32](https://img.shields.io/badge/ESP32-esp32dev-E7352C?logo=espressif&logoColor=white)](platformio.ini)
+[![Arduino%20core](https://img.shields.io/badge/Arduino%20core-3.x%20(ESP----IDF%205)-00979D?logo=arduino&logoColor=white)](platformio.ini)
+[![MQTT](https://img.shields.io/badge/MQTT-TLS-660066?logo=mqtt&logoColor=white)](src)
+
 There is no external sensor or actuator wired up in this sketch — it is a
 connectivity/TLS reference example. The "data" flowing over MQTT is just
 the fixed strings described below; swap in real sensor readings where the
@@ -167,3 +175,14 @@ Compared to the original 2020 version of this sketch:
 - **No behavior change**: topics (`test/hello`, `test/status`,
   `test/ack`), QoS levels (0), publish payloads, keepalive (15s), and the
   2-second publish loop are all unchanged.
+
+## Project statistics
+
+| Metric | Value |
+|---|---|
+| Tracked files | 5 |
+| Lines of code (non-blank) | 125 |
+| Languages | C++ (Arduino) 108, C/C++ header 17 |
+| Commits | 3 |
+
+CI compiles the firmware with PlatformIO on each push to `master`, using the example credentials file.
